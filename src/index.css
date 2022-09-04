@@ -1,0 +1,64 @@
+/* @import-normalize; bring in normalize.css styles */
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --white: #fff;
+  --blue: #3f51b5;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  color: #212121;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@import './components/Searchbar/Searchbar.module.css';
+@import './components/ImageGallery/ImageGallery.module.css';
+@import './components/Modal/Modal.module.css';
+@import './components/Button/Button.module.css';
+@import './components/ErrorImg/ErrorImg.module.css';
+
+/*
+ * Стили компонента App
+ */
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding-bottom: 24px;
+}
+
+/*
+ * Стили компонента MagnifyingGlass
+ */
+.MagnifyingGlass-wrapper {
+  display: block;
+  margin: 0 auto;
+}
