@@ -30,7 +30,7 @@ function changeState(state, action) {
         case 'set-error':
             return { ...state, error: action.payload };
         default:
-        throw new Error(`Unsuported action type ${action.type}`);
+        throw new Error(`Unsupported action type ${action.type}`);
     };
 };
 
