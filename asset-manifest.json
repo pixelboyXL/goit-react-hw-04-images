@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-04-images/static/css/main.1ce8ebf3.css",
+    "main.css": "/goit-react-hw-04-images/static/css/main.e554753d.css",
     "main.js": "/goit-react-hw-04-images/static/js/main.bb229bbe.js",
     "static/media/Best-Coming-Soon-and-404-Error-Page-Templates-for-Your-Unique-Websites.jpg": "/goit-react-hw-04-images/static/media/Best-Coming-Soon-and-404-Error-Page-Templates-for-Your-Unique-Websites.f80ad116023cc3547957.jpg",
     "index.html": "/goit-react-hw-04-images/index.html",
-    "main.1ce8ebf3.css.map": "/goit-react-hw-04-images/static/css/main.1ce8ebf3.css.map",
+    "main.e554753d.css.map": "/goit-react-hw-04-images/static/css/main.e554753d.css.map",
     "main.bb229bbe.js.map": "/goit-react-hw-04-images/static/js/main.bb229bbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.1ce8ebf3.css",
+    "static/css/main.e554753d.css",
     "static/js/main.bb229bbe.js"
   ]
 }
