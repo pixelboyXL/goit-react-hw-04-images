@@ -4,14 +4,14 @@
 .Button {
     padding: 8px 16px;
     border-radius: 2px;
-    background-color: var(--blue);
+    background-color: var(--kindaBlue);
     transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     display: block;
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
-    color: var(--white);
+    color: var(--clearlyWhite);
     border: 0;
     text-decoration: none;
     cursor: pointer;
@@ -27,5 +27,5 @@
 
 .Button:hover,
 .Button:focus {
-    background-color: var(--blue);
+    background-color: var(--kindaBlue);
 }
