@@ -10,6 +10,7 @@ import { Button } from "components/Button/Button";
 import { Modal } from "components/Modal/Modal";
 import { ErrorImg } from "./ErrorImg/ErrorImg";
 import img from 'components/images/Best-Coming-Soon-and-404-Error-Page-Templates-for-Your-Unique-Websites.jpg';
+import { Footer } from "./Footer/Footer";
 
 export const App = () => {
   const [text, setText] = useState('');
@@ -82,25 +83,28 @@ export const App = () => {
   return (
     <>
       <Searchbar onSubmit={searchImages} />
-      {isError === true
-        ? <ErrorImg errorImg={img} />
-        : images.length > 0
-        && <ImageGallery allImages={images} onToggleModal={toggleModal} />
-      }
-      {loading === true
-        ? <MagnifyingGlass
-          visible={true}
-          height="80"
-          width="80"
-          ariaLabel="MagnifyingGlass-loading"
-          wrapperStyle={{}}
-          wrapperClass="MagnifyingGlass-wrapper"
-          glassColor = '#c0efff'
-          color='#3f51b5' />
-        : images.length > 0
-        && <Button text="Load more" type="button" loadMoreImages={loadMoreImages} />}
-      {isModalOpen
-        && <Modal data={largeImageData} onToggleModal={toggleModal} />}
+      <main className="MainWrap">
+        {isError === true
+          ? <ErrorImg errorImg={img} />
+          : images.length > 0
+            && <ImageGallery allImages={images} onToggleModal={toggleModal} />
+        }
+        {loading === true
+          ? <MagnifyingGlass
+            visible={true}
+            height="80"
+            width="80"
+            ariaLabel="MagnifyingGlass-loading"
+            wrapperStyle={{}}
+            wrapperClass="MagnifyingGlass-wrapper"
+            glassColor = '#c0efff'
+            color='#3f51b5' />
+          : images.length > 0
+            && <Button text="Load more" type="button" loadMoreImages={loadMoreImages} />}
+        {isModalOpen
+          && <Modal data={largeImageData} onToggleModal={toggleModal} />}
+      </main>
+      <Footer />
       <ToastContainer autoClose={3000} />
     </>
   );

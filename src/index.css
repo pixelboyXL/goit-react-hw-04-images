@@ -52,6 +52,12 @@ html {
   overflow-x: hidden;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -60,6 +66,7 @@ img {
 
 @import './components/Searchbar/Searchbar.module.css';
 @import './components/ImageGallery/ImageGallery.module.css';
+@import './components/Footer/Footer.module.css';
 @import './components/Modal/Modal.module.css';
 @import './components/Button/Button.module.css';
 @import './components/ErrorImg/ErrorImg.module.css';
@@ -72,6 +79,10 @@ img {
   grid-template-columns: 1fr;
   grid-gap: 16px;
   padding-bottom: 24px;
+}
+
+.MainWrap {
+  flex-grow: 1;
 }
 
 /*

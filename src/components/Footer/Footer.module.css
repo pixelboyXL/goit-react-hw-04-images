@@ -1,0 +1,48 @@
+.FooterWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    flex-shrink: 0;
+    padding: 8px 0;
+    background-color: var(--kindaBlue);
+};
+
+.FooterDiv {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.FooterTitle {
+    margin: 0;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--clearlyWhite);
+    cursor: pointer;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.FooterTitle:hover,
+.FooterTitle:focus {
+    text-shadow: 0px 5px 10px var(--clearlyWhite);
+}
+
+.FooterLink {
+    color: var(--clearlyWhite);
+}
+
+.FooterLink:not(:last-child) {
+    margin-right: 16px;
+}
+
+.FooterIcon {
+    fill: currentColor;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.FooterIcon:hover,
+.FooterIcon:focus {
+    transform: scale(1.15)
+}
